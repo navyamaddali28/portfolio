@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <style>
+    
+    body {
+      background-image: url(https://img.freepik.com/premium-photo/white-office-desk-table-with-laptop-supplies-top-view-with-copyspace-flat-lay_33795-322.jpg?semt=ais_hybrid&w=740&q=80);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position:center;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+       background-color: rgba(255, 255, 255, 0.7); 
+       backdrop-filter: blur(6px); 
+       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+       padding: 10px 50px;
+     
+      z-index: 1000;
+    }
+
+    .logo-parent img {
+      width: 80px;
+      border-radius: 50%;
+    }
+
+    .navbar-links {
+      width: 70%;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 40px;
+      
+    }
+
+    .navbar-links a {
+      color:rgb(167, 61, 61);
+      text-decoration: none;
+      font-size: 1.3rem;
+      transition: 0.3s;
+    }
+
+    
+    .navbar-links a.active {
+      color:rgb(172, 85, 85);
+      font-weight: bold;
+    }
+    .navbar-links a:hover {
+  color: black;         
+    }
+
+    .contact {
+      background-color: rgb(4, 53, 55);
+      padding: 8px;
+      width: 10%;
+      text-align: center;
+      border-radius: 25px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .contact:hover {
+      background-color: goldenrod;
+      color: beige;
+    }
+
+    .web-developer-container {
+      font-family: sans-serif;
+      background-color: rgba(255, 255, 255, 0.6);
+      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2% 5%;
+      margin-top: 100px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(3px);
+    }
+
+    .web-developer {
+      width: 40%;
+    }
+
+    .web-developer h1 {
+      font-size: 2.3rem;
+    }
+
+    .web-developer p {
+      text-align: justify;
+    }
+
+    .my-profile {
+      width: 40%;
+    }
+
+    .web-developer-links a {
+      background-color: cadetblue;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 25px;
+      margin: 0px 10px;
+    }
+
+    .web-developer-links a:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <nav class="navbar">
+    <a href="#home" class="logo-parent">
+      <img src="https://yt3.googleusercontent.com/a_IjHrfWVakq1fwTugdpqz8zN6SoQEcxmMs2rGfID2yVXd3VDj-QxmQdt2BQ0VILipuhxPSvXg=s900-c-k-c0x00ffffff-no-rj" alt="">
+    </a>
+
+    <div class="navbar-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      
+    </div>
+
+    <a href="#contact" class="contact">Contact</a>
+  </nav>
+
+ 
+  <div id="home" class="web-developer-container">
+    <div class="web-developer">
+      <h1>Hey!</h1>
+      <h1>I am a web developer</h1>
+      <p>Welcome to my portfolio,there's a three days workshop that is being conducted in collge from codegnan and my mentor ravi siva ram teja has taught us how to make our basic portfolio.</p>
+
+      <div class="web-developer-links">
+        <a href="">Explore more </a>
+        
+      </div>
+    </div>
+
+    <img class="my-profile" src="https://live.designtocodes.com/OnePage/NextGenAppsPro/assets/images/Hero_right_img.png" alt="">
+  </div>
+
+  <div id="about" class="web-developer-container"
+  style="display: list-item;">
+    <h1>About Me</h1>
+    <p>I'm a second-year B.Tech student with a growing passion for web development, diving deep into HTML, CSS, and JavaScript to craft engaging digital experiences. Though I'm new to the tech world, I’m constantly exploring emerging tools and frameworks, eager to learn and build. Every line of code feels like a step forward in my journey, and I’m excited to turn ideas into interactive realities.</p>
+    
+  </div>
+
+  <div id="skills" class="web-developer-container"
+  style="display:list-item;padding: 30px;">
+  <div>
+    
+  </div>
+  
+    
+    <h1>My Skills</h1>
+    <p>HTML & CSS – Building structured and styled web pages|</p>
+    <p>Python – Writing scripts and solving problems efficiently|</p>
+    <p>C & C++ – Strong foundation in programming and logic building|</p>
+    <p>Operating Systems – Learning how system-level processes and memory management work|</p>
+    <p>Data Structures – Understanding core concepts like arrays, stacks, queues, and trees|</p>
+  </div>
+  <div id="work" class="web-developer-container" style="flex-direction: column; align-items: flex-start;">
+  <h1>My Work</h1>
+  <p>Here are two of my main projects that showcase my skills and creativity in real-world applications.</p>
+
+  <div style="display: flex; justify-content: space-between; width: 100%; flex-wrap: wrap; margin-top: 20px;">
+    
+    
+    <div style="background-color: white; width: 45%; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      <h2>🚗 RFID Car Parking System</h2>
+      <p>
+        A smart parking system that uses RFID tags to allow only registered vehicles to enter.  
+        This improves security, saves time, and ensures an automated parking experience.
+      </p>
+      <p><strong>Technologies Used:</strong> RFID Module, Arduino, Embedded C, Database</p>
+      <video controls autoplay loop muted width="300"
+      style="transform: rotate(-90deg);margin-left:150px;"> 
+
+
+        <source src="rfid.mp4" type="video/mp4">
+      </video>
+      
+    </div>
+
+    
+    <div style="background-color: white; width: 45%; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      <h2>🧠 VeriFact – AI Combating Misinformation</h2>
+      <p>
+        A multilingual web platform built to detect and verify fake news using AI.  
+        It checks text, images, and videos to promote truth and digital awareness.
+      </p>
+      <p><strong>Technologies Used:</strong> Python, Flask, HTML, CSS, Machine Learning</p>
+    </div>
+
+  </div>
+</div>
+<div id="contact" class="web-developer-container">
+    <h1>Contact Me</h1>
+    <p>contact number:7671850193</p>
+    <p>Email: 24eu08100@vrsec.ac.in</p>
+  </div>
+</body>
+</html>
+
+
